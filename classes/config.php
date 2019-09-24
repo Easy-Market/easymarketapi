@@ -11,6 +11,11 @@ if (in_array($_SERVER['REMOTE_ADDR'], $localhost)) {
     $token = hash("sha256", "easymarket..");
 } else {
     $baseURL = "http://api.easymarket.com.ng";
+    $host = "localhost";
+    $username = "ceervdcg_easyadmin";
+    $passwd = "";
+    $dbname = "ceervdcg_mymarket";
+    $token = hash("sha256", "easymarket..");
 }
 
 
