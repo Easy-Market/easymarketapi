@@ -13,9 +13,10 @@ if (in_array($_SERVER['REMOTE_ADDR'], $localhost)) {
     $baseURL = "http://api.easymarket.com.ng";
     $host = "localhost";
     $username = "ceervdcg_easyadmin";
-    $passwd = "";
+    $passwd = "iamtheb0ss";
     $dbname = "ceervdcg_mymarket";
     $token = hash("sha256", "easymarket..");
+    
 }
 
 
