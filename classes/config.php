@@ -14,9 +14,9 @@ if (in_array($_SERVER['REMOTE_ADDR'], $localhost)) {
     $host = "localhost";
     $username = "ceervdcg_easyadmin";
     $passwd = "iamtheb0ss";
-    $dbname = "ceervdcg_mymarket";
+    $dbname = "ceervdcg_easymarket";
     $token = hash("sha256", "easymarket..");
-    
+
 }
 
 
