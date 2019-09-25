@@ -41,6 +41,31 @@ class auth
             }
         }
     }
+
+    public function loginUser($conn, $phoneNum, $pass)
+    {
+        $loginUser = $conn->query("SELECT * FROM users WHERE us_phone = '$phoneNum'");
+        if ($conn->affected_rows > 0) {
+            $userInfo = $loginUser->fetch_assoc();
+            if (password_verify($pass, $userInfo['us_password'])) {
+                $accountFound['code'] = 200;
+                $accountFound['msg'] = "account_found";
+                header('content-type:application/json');
+                echo json_encode($accountFound);
+            } else {
+                $wrongDetails['code'] = 419;
+                $wrongDetails['msg'] = "wrong_details";
+                header('content-type:application/json');
+                echo json_encode($wrongDetails);
+            }
+        } else {
+            $noRecord['code'] = 419;
+            $noRecord['msg'] = "account_not_found";
+            header('content-type:application/json');
+            echo json_encode($noRecord);
+            die();
+        }
+    }
 }
 
-$authClass = new auth(); 
+$authClass = new auth();
