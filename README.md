@@ -16,3 +16,5 @@ The token is a 64-character string, a product of sha256 hashing which will be gi
   ```pass2``` Verify password<br>
   ```vendorurl``` A string without spaces or punctuation to be used as a unique ID and vendor URL for the store<br>
   ```token``` The token as discussed above.
+  ##### Sample User Signup API Call
+  ```http://localhost/easymarketapi/modules/signup.php?email=johndoe@example.com&phonenum=08111222222&fname=John&lname=Doe&bizname=John Tech Gifts&cansell=1&displaymode=business&pass1=admin&pass2=admin&vendorurl=johndoetech&token=xxxx```
