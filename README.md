@@ -1,7 +1,7 @@
 # easymarketapi
 RESTful API for EasyMarket
 ### Making API calls
-The base url is ```http://api.easymarket.com.ng/```.
+The base url is ```http://api.easymarket.com.ng/modules/```.
 The token is a 64-character string, a product of sha256 hashing which will be given to the developer upon request.
 #### Signing Up Users
   The following keys are required to sign up a user:<br>
@@ -17,4 +17,4 @@ The token is a 64-character string, a product of sha256 hashing which will be gi
   ```vendorurl``` A string without spaces or punctuation to be used as a unique ID and vendor URL for the store<br>
   ```token``` The token as discussed above.
   ##### Sample User Signup API Call
-  ```http://localhost/easymarketapi/modules/signup.php?email=johndoe@example.com&phonenum=08111222222&fname=John&lname=Doe&bizname=John Tech Gifts&cansell=1&displaymode=business&pass1=admin&pass2=admin&vendorurl=johndoetech&token=xxxx```
+  ```http://api.easymarket.com.ng/modules/signup.php?email=johndoe@example.com&phonenum=08111222222&fname=John&lname=Doe&bizname=John Tech Gifts&cansell=1&displaymode=business&pass1=admin&pass2=admin&vendorurl=johndoetech&token=xxxx```
