@@ -18,3 +18,13 @@ The token is a 64-character string, a product of sha256 hashing which will be gi
   ```token``` The token as discussed above.
   ##### Sample User Signup API Call
   ```http://api.easymarket.com.ng/modules/signup.php?email=johndoe@example.com&phonenum=08111222222&fname=John&lname=Doe&bizname=John Tech Gifts&cansell=1&displaymode=business&pass1=admin&pass2=admin&vendorurl=johndoetech&token=xxxx```
+  <br>
+  ###### User Exists
+  When a user tries signing up with an email address or password already existing in the database, the following response is displayed:<br>
+  ```{"code":419,"msg":"UserExists"}```
+  ###### Vendor URL Exists
+  When a user tries signing up with an existing vendor URL, the following is returned:<br>
+  ```{"code":419,"msg":"vendorurlexists"}``` 
+  ###### Successful Signup
+  When a signup attempt is successful, the following is displayed:<br>
+  ```{"code":200,"msg":"usercreated"}```
