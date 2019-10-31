@@ -86,6 +86,8 @@ class auth
             if (password_verify($pass, $userInfo['us_password'])) {
                 $accountFound['code'] = 200;
                 $accountFound['msg'] = "account_found";
+                $accountFound['userid'] = $userInfo['us_id'];
+                //var_dump($accountFound);
                 header('content-type:application/json');
                 echo json_encode($accountFound);
             } else {
