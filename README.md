@@ -20,7 +20,7 @@ The token is a 64-character string, a product of sha256 hashing which will be gi
   ```{"code":419,"msg":"UserExists"}```
   ###### Successful Signup
   When a signup attempt is successful, the following is displayed:<br>
-  ```{"code":200,"msg":"usercreated"}```
+  ```{"code":200,"msg":"usercreated"}```<br>
   #### Home screen 
      This section is handled by the ```homescreen``` class located at ```/classes/homescreen.php```. It takes care of all the features on the home screen, namely:<br>
   ####### Slider <br>
@@ -28,7 +28,7 @@ The token is a 64-character string, a product of sha256 hashing which will be gi
   ####### Featured Items/Top Sellers<br>
 
   #### Top Categories
-  To make calls, the following keys are required:
+  To make calls, the following keys are required:<br>
   ```token``` See the section Making API Calls. <br>
   ```topcats``` This key should be added to the request URL without assigning it any value and assigned a value of ```1```.<br>
   ###### Sample call<br>
