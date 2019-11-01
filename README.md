@@ -21,3 +21,34 @@ The token is a 64-character string, a product of sha256 hashing which will be gi
   ###### Successful Signup
   When a signup attempt is successful, the following is displayed:<br>
   ```{"code":200,"msg":"usercreated"}```
+  #### Home screen 
+     This section is handled by the ```homescreen``` class located at ```/classes/homescreen.php```. It takes care of all the features on the home screen, namely:<br>
+  ####### Slider <br>
+  ####### Categories <br>
+  ####### Featured Items/Top Sellers<br>
+
+  #### Top Categories
+  To make calls, the following keys are required:
+  ```token``` See the section Making API Calls. <br>
+  ```topcats``` This key should be added to the request URL without assigning it any value and assigned a value of ```1```.<br>
+  ###### Sample call<br>
+  ```http://localhost/easymarketapi/modules/homeScreen.php?token=xxxx&&topcats=1```
+  ###### Sample Result
+  ```[
+    [
+        {
+            "cat_id": "1",
+            "cat_name": "Natural Cosmetics",
+            "cat_icon": "res/banners/placeholder.png",
+            "featured": "1"
+        }
+    ],    
+    [
+        {
+            "cat_id": "4",
+            "cat_name": "Phones and Tablets",
+            "cat_icon": "res/banners/placeholder.png",
+            "featured": "1"
+        }
+    ]
+]```
