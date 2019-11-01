@@ -21,8 +21,9 @@ The token is a 64-character string, a product of sha256 hashing which will be gi
   ###### Successful Signup
   When a signup attempt is successful, the following is displayed:<br>
   ```{"code":200,"msg":"usercreated"}```<br>
+
   #### Home screen 
-     This section is handled by the ```homescreen``` class located at ```/classes/homescreen.php```. It takes care of all the features on the home screen, namely:<br>
+  This section is handled by the ```homescreen``` class located at ```/classes/homescreen.php```. It takes care of all the features on the home screen, namely:<br>
   ###### Slider <br>
   ###### Categories <br>
   ###### Featured Items/Top Sellers<br>
