@@ -31,25 +31,41 @@ The token is a 64-character string, a product of sha256 hashing which will be gi
   #### Top Categories
   To make calls, the following keys are required:<br>
   ```token``` See the section Making API Calls. <br>
-  ```topcats``` This key should be added to the request URL without assigning it any value and assigned a value of ```1```.<br>
+  ```topcats``` This key should be added to the request URL and assigned ```yes``` as its value.<br>
   ###### Sample call<br>
-  ```http://localhost/easymarketapi/modules/homeScreen.php?token=xxxx&&topcats=1```
+  ```http://localhost/easymarketapi/modules/homeScreen.php?token=xxxx&&topcats=yes```
   ###### Sample Result
   ```[
     [
         {
             "cat_id": "1",
-            "cat_name": "Natural Cosmetics",
-            "cat_icon": "res/banners/placeholder.png",
+            "cat_icon": "jjjjnjkn",
+            "cat_name": "7",
             "featured": "1"
         }
-    ],    
+    ],
     [
         {
-            "cat_id": "4",
-            "cat_name": "Phones and Tablets",
-            "cat_icon": "res/banners/placeholder.png",
+            "cat_id": "2",
+            "cat_icon": "jbjnjnjn",
+            "cat_name": "8",
+            "featured": "1"
+        }
+    ],
+    [
+        {
+            "cat_id": "3",
+            "cat_icon": "jjjjnjkn",
+            "cat_name": "9",
             "featured": "1"
         }
     ]
-]```
+]```<br>
+
+
+#### Sliders
+To make calls, the following keys are required: <br>
+ ```token``` See the section Making API Calls. <br>
+ ```sliders``` Thi should be added to the request URL and assigned ```yes``` as a value.<br>
+#### Sample Request<br>
+```http://localhost/easymarketapi/modules/homeScreen.php?token=xxxxx&sliders=yes```
